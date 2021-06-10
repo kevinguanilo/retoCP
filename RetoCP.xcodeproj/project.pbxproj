@@ -14,6 +14,9 @@
 		2428D7182670597D007325FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2428D7162670597D007325FB /* LaunchScreen.storyboard */; };
 		243410AF2672868C00915539 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243410AE2672868C00915539 /* GoogleService-Info.plist */; };
 		243411002672B23700915539 /* CandyStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243410FF2672B23700915539 /* CandyStoreViewController.swift */; };
+		243411182672BA8D00915539 /* CandyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243411172672BA8D00915539 /* CandyStore.swift */; };
+		2434111D2672BE4A00915539 /* CandysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434111B2672BE4A00915539 /* CandysTableViewCell.swift */; };
+		2434111E2672BE4A00915539 /* CandysTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2434111C2672BE4A00915539 /* CandysTableViewCell.xib */; };
 		243B8282267115C600E0BB09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B8281267115C600E0BB09 /* HomeViewController.swift */; };
 		243B82A12671579D00E0BB09 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82A02671579D00E0BB09 /* Constants.swift */; };
 		243B82A4267157A600E0BB09 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82A3267157A600E0BB09 /* Services.swift */; };
@@ -35,6 +38,9 @@
 		2428D7192670597D007325FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		243410AE2672868C00915539 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		243410FF2672B23700915539 /* CandyStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyStoreViewController.swift; sourceTree = "<group>"; };
+		243411172672BA8D00915539 /* CandyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyStore.swift; sourceTree = "<group>"; };
+		2434111B2672BE4A00915539 /* CandysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandysTableViewCell.swift; sourceTree = "<group>"; };
+		2434111C2672BE4A00915539 /* CandysTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CandysTableViewCell.xib; sourceTree = "<group>"; };
 		243B8281267115C600E0BB09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		243B82A02671579D00E0BB09 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		243B82A3267157A600E0BB09 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 		2428D70A2670597D007325FB /* RetoCP */ = {
 			isa = PBXGroup;
 			children = (
+				2434111A2672BDF200915539 /* Views */,
 				243B82E32671908500E0BB09 /* Helpers */,
 				243B82DB26716C2400E0BB09 /* Model */,
 				243B829F2671578E00E0BB09 /* Networking */,
@@ -102,6 +109,15 @@
 				243410AE2672868C00915539 /* GoogleService-Info.plist */,
 			);
 			path = RetoCP;
+			sourceTree = "<group>";
+		};
+		2434111A2672BDF200915539 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2434111B2672BE4A00915539 /* CandysTableViewCell.swift */,
+				2434111C2672BE4A00915539 /* CandysTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		243B82802671159A00E0BB09 /* Controller */ = {
@@ -128,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				243B82DC26716C4200E0BB09 /* Movies.swift */,
+				243411172672BA8D00915539 /* CandyStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2434111E2672BE4A00915539 /* CandysTableViewCell.xib in Resources */,
 				2428D7182670597D007325FB /* LaunchScreen.storyboard in Resources */,
 				243410AF2672868C00915539 /* GoogleService-Info.plist in Resources */,
 				2428D7152670597D007325FB /* Assets.xcassets in Resources */,
@@ -285,11 +303,13 @@
 			files = (
 				243411002672B23700915539 /* CandyStoreViewController.swift in Sources */,
 				243B82FB2671C78800E0BB09 /* UIApplication+Extensions.swift in Sources */,
+				2434111D2672BE4A00915539 /* CandysTableViewCell.swift in Sources */,
 				243B82E52671909E00E0BB09 /* ImageFromURL.swift in Sources */,
 				243B82A4267157A600E0BB09 /* Services.swift in Sources */,
 				2428D70C2670597D007325FB /* AppDelegate.swift in Sources */,
 				243B82DD26716C4200E0BB09 /* Movies.swift in Sources */,
 				243B82F82671C75700E0BB09 /* TabBarViewController.swift in Sources */,
+				243411182672BA8D00915539 /* CandyStore.swift in Sources */,
 				243B82F12671C49400E0BB09 /* LoginViewController.swift in Sources */,
 				2428D70E2670597D007325FB /* SceneDelegate.swift in Sources */,
 				243B8282267115C600E0BB09 /* HomeViewController.swift in Sources */,

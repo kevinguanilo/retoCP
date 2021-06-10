@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ImageSlideshow
 
 struct Movies: Codable {
     let premieres: [Premiers]
@@ -14,4 +15,9 @@ struct Movies: Codable {
 struct Premiers: Codable {
     let description: String
     let image: String
+}
+
+struct MoviesResult {
+    let moviesImg: [InputSource]
+    let moviesTitle: [String]
 }

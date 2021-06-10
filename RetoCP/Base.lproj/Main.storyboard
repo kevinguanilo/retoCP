@@ -15,12 +15,48 @@
                     <view key="view" contentMode="scaleToFill" id="tAH-gy-wxZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EnL-le-oLy">
+                                <rect key="frame" x="0.0" y="130" width="375" height="488"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bf7-8n-0VM" id="YlA-tE-wAg"/>
+                                    <outlet property="delegate" destination="bf7-8n-0VM" id="BlV-Zu-JcL"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="2aa-SD-qJ8">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DULCERÍA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGR-Qr-rXh">
+                                <rect key="frame" x="85.5" y="40" width="204" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7td-35-if7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="35"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Kgi-cu-ngK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kgi-cu-ngK" firstAttribute="trailing" secondItem="EnL-le-oLy" secondAttribute="trailing" id="5E4-LN-6rr"/>
+                            <constraint firstItem="2aa-SD-qJ8" firstAttribute="centerX" secondItem="tAH-gy-wxZ" secondAttribute="centerX" id="NhG-W6-vWR"/>
+                            <constraint firstItem="Kgi-cu-ngK" firstAttribute="bottom" secondItem="EnL-le-oLy" secondAttribute="bottom" id="ORv-1H-USO"/>
+                            <constraint firstItem="VGR-Qr-rXh" firstAttribute="top" secondItem="Kgi-cu-ngK" secondAttribute="top" constant="40" id="Qiw-dI-WNj"/>
+                            <constraint firstItem="2aa-SD-qJ8" firstAttribute="centerY" secondItem="tAH-gy-wxZ" secondAttribute="centerY" id="SdP-GP-UhT"/>
+                            <constraint firstItem="VGR-Qr-rXh" firstAttribute="centerX" secondItem="tAH-gy-wxZ" secondAttribute="centerX" id="Szi-Nr-C7M"/>
+                            <constraint firstItem="EnL-le-oLy" firstAttribute="leading" secondItem="Kgi-cu-ngK" secondAttribute="leading" id="W3d-jz-wfn"/>
+                            <constraint firstItem="EnL-le-oLy" firstAttribute="top" secondItem="VGR-Qr-rXh" secondAttribute="bottom" constant="40" id="aN2-Cn-D4h"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dulcería" image="store-icon" id="3xG-Yd-cE6">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="2aa-SD-qJ8" id="wdn-te-FMk"/>
+                        <outlet property="candyStoreTableView" destination="EnL-le-oLy" id="a6a-lJ-TJa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pI-f9-d5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
