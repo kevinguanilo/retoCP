@@ -3,27 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2428D70C2670597D007325FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428D70B2670597D007325FB /* AppDelegate.swift */; };
 		2428D70E2670597D007325FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428D70D2670597D007325FB /* SceneDelegate.swift */; };
-		2428D7102670597D007325FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428D70F2670597D007325FB /* ViewController.swift */; };
 		2428D7132670597D007325FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2428D7112670597D007325FB /* Main.storyboard */; };
 		2428D7152670597D007325FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2428D7142670597D007325FB /* Assets.xcassets */; };
 		2428D7182670597D007325FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2428D7162670597D007325FB /* LaunchScreen.storyboard */; };
+		243410AF2672868C00915539 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243410AE2672868C00915539 /* GoogleService-Info.plist */; };
+		243411002672B23700915539 /* CandyStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243410FF2672B23700915539 /* CandyStoreViewController.swift */; };
+		243411182672BA8D00915539 /* CandyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243411172672BA8D00915539 /* CandyStore.swift */; };
+		2434111D2672BE4A00915539 /* CandysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2434111B2672BE4A00915539 /* CandysTableViewCell.swift */; };
+		2434111E2672BE4A00915539 /* CandysTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2434111C2672BE4A00915539 /* CandysTableViewCell.xib */; };
+		243B8282267115C600E0BB09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B8281267115C600E0BB09 /* HomeViewController.swift */; };
+		243B82A12671579D00E0BB09 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82A02671579D00E0BB09 /* Constants.swift */; };
+		243B82A4267157A600E0BB09 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82A3267157A600E0BB09 /* Services.swift */; };
+		243B82DD26716C4200E0BB09 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82DC26716C4200E0BB09 /* Movies.swift */; };
+		243B82E52671909E00E0BB09 /* ImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82E42671909E00E0BB09 /* ImageFromURL.swift */; };
+		243B82F12671C49400E0BB09 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82F02671C49400E0BB09 /* LoginViewController.swift */; };
+		243B82F82671C75700E0BB09 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82F72671C75700E0BB09 /* TabBarViewController.swift */; };
+		243B82FB2671C78800E0BB09 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82FA2671C78800E0BB09 /* UIApplication+Extensions.swift */; };
+		307CD12CB1B5AC5450BF9F4B /* Pods_RetoCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299300E925A9470E2CAB558 /* Pods_RetoCP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2428D7082670597D007325FB /* RetoCP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetoCP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2428D70B2670597D007325FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2428D70D2670597D007325FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2428D70F2670597D007325FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2428D7122670597D007325FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2428D7142670597D007325FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2428D7172670597D007325FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2428D7192670597D007325FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243410AE2672868C00915539 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		243410FF2672B23700915539 /* CandyStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyStoreViewController.swift; sourceTree = "<group>"; };
+		243411172672BA8D00915539 /* CandyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyStore.swift; sourceTree = "<group>"; };
+		2434111B2672BE4A00915539 /* CandysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandysTableViewCell.swift; sourceTree = "<group>"; };
+		2434111C2672BE4A00915539 /* CandysTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CandysTableViewCell.xib; sourceTree = "<group>"; };
+		243B8281267115C600E0BB09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		243B82A02671579D00E0BB09 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		243B82A3267157A600E0BB09 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		243B82DC26716C4200E0BB09 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		243B82E42671909E00E0BB09 /* ImageFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromURL.swift; sourceTree = "<group>"; };
+		243B82F02671C49400E0BB09 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		243B82F72671C75700E0BB09 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		243B82FA2671C78800E0BB09 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		5299300E925A9470E2CAB558 /* Pods_RetoCP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetoCP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		544704B40D98CEB7AECF60BD /* Pods-RetoCP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetoCP.release.xcconfig"; path = "Target Support Files/Pods-RetoCP/Pods-RetoCP.release.xcconfig"; sourceTree = "<group>"; };
+		6E1148800073B6C7357447DE /* Pods-RetoCP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetoCP.debug.xcconfig"; path = "Target Support Files/Pods-RetoCP/Pods-RetoCP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307CD12CB1B5AC5450BF9F4B /* Pods_RetoCP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08CA2082F1F99F4DE351C376 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5299300E925A9470E2CAB558 /* Pods_RetoCP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2428D6FF2670597D007325FB = {
 			isa = PBXGroup;
 			children = (
 				2428D70A2670597D007325FB /* RetoCP */,
 				2428D7092670597D007325FB /* Products */,
+				F37121D1867DF0FBC4AB03B9 /* Pods */,
+				08CA2082F1F99F4DE351C376 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +95,76 @@
 		2428D70A2670597D007325FB /* RetoCP */ = {
 			isa = PBXGroup;
 			children = (
+				2434111A2672BDF200915539 /* Views */,
+				243B82E32671908500E0BB09 /* Helpers */,
+				243B82DB26716C2400E0BB09 /* Model */,
+				243B829F2671578E00E0BB09 /* Networking */,
+				243B82802671159A00E0BB09 /* Controller */,
 				2428D70B2670597D007325FB /* AppDelegate.swift */,
 				2428D70D2670597D007325FB /* SceneDelegate.swift */,
-				2428D70F2670597D007325FB /* ViewController.swift */,
 				2428D7112670597D007325FB /* Main.storyboard */,
 				2428D7142670597D007325FB /* Assets.xcassets */,
 				2428D7162670597D007325FB /* LaunchScreen.storyboard */,
 				2428D7192670597D007325FB /* Info.plist */,
+				243410AE2672868C00915539 /* GoogleService-Info.plist */,
 			);
 			path = RetoCP;
+			sourceTree = "<group>";
+		};
+		2434111A2672BDF200915539 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2434111B2672BE4A00915539 /* CandysTableViewCell.swift */,
+				2434111C2672BE4A00915539 /* CandysTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		243B82802671159A00E0BB09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				243B8281267115C600E0BB09 /* HomeViewController.swift */,
+				243B82F02671C49400E0BB09 /* LoginViewController.swift */,
+				243B82F72671C75700E0BB09 /* TabBarViewController.swift */,
+				243410FF2672B23700915539 /* CandyStoreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		243B829F2671578E00E0BB09 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				243B82A02671579D00E0BB09 /* Constants.swift */,
+				243B82A3267157A600E0BB09 /* Services.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		243B82DB26716C2400E0BB09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				243B82DC26716C4200E0BB09 /* Movies.swift */,
+				243411172672BA8D00915539 /* CandyStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		243B82E32671908500E0BB09 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				243B82E42671909E00E0BB09 /* ImageFromURL.swift */,
+				243B82FA2671C78800E0BB09 /* UIApplication+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F37121D1867DF0FBC4AB03B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E1148800073B6C7357447DE /* Pods-RetoCP.debug.xcconfig */,
+				544704B40D98CEB7AECF60BD /* Pods-RetoCP.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2428D71C2670597D007325FB /* Build configuration list for PBXNativeTarget "RetoCP" */;
 			buildPhases = (
+				ED2010E529639465A0A93CA9 /* [CP] Check Pods Manifest.lock */,
 				2428D7042670597D007325FB /* Sources */,
 				2428D7052670597D007325FB /* Frameworks */,
 				2428D7062670597D007325FB /* Resources */,
+				D6BCAB191B313243A11A6814 /* [CP] Embed Pods Frameworks */,
+				87E5EA8884CAC94EB3FA60B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,7 +227,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2434111E2672BE4A00915539 /* CandysTableViewCell.xib in Resources */,
 				2428D7182670597D007325FB /* LaunchScreen.storyboard in Resources */,
+				243410AF2672868C00915539 /* GoogleService-Info.plist in Resources */,
 				2428D7152670597D007325FB /* Assets.xcassets in Resources */,
 				2428D7132670597D007325FB /* Main.storyboard in Resources */,
 			);
@@ -132,14 +237,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87E5EA8884CAC94EB3FA60B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6BCAB191B313243A11A6814 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED2010E529639465A0A93CA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RetoCP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2428D7042670597D007325FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2428D7102670597D007325FB /* ViewController.swift in Sources */,
+				243411002672B23700915539 /* CandyStoreViewController.swift in Sources */,
+				243B82FB2671C78800E0BB09 /* UIApplication+Extensions.swift in Sources */,
+				2434111D2672BE4A00915539 /* CandysTableViewCell.swift in Sources */,
+				243B82E52671909E00E0BB09 /* ImageFromURL.swift in Sources */,
+				243B82A4267157A600E0BB09 /* Services.swift in Sources */,
 				2428D70C2670597D007325FB /* AppDelegate.swift in Sources */,
+				243B82DD26716C4200E0BB09 /* Movies.swift in Sources */,
+				243B82F82671C75700E0BB09 /* TabBarViewController.swift in Sources */,
+				243411182672BA8D00915539 /* CandyStore.swift in Sources */,
+				243B82F12671C49400E0BB09 /* LoginViewController.swift in Sources */,
 				2428D70E2670597D007325FB /* SceneDelegate.swift in Sources */,
+				243B8282267115C600E0BB09 /* HomeViewController.swift in Sources */,
+				243B82A12671579D00E0BB09 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +457,7 @@
 		};
 		2428D71D2670597D007325FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1148800073B6C7357447DE /* Pods-RetoCP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +477,7 @@
 		};
 		2428D71E2670597D007325FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544704B40D98CEB7AECF60BD /* Pods-RetoCP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
