@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mDl-4R-TzS">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="bf7-8n-0VM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tAH-gy-wxZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Kgi-cu-ngK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -31,14 +31,46 @@
             <objects>
                 <viewController id="vcx-hk-k4t" customClass="HomeViewController" customModule="RetoCP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0dr-1x-WOi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPC-Pi-kZS" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="16" y="100" width="343" height="468"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="TOy-U4-6fz">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CINEPLANET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkP-ya-nmq">
+                                <rect key="frame" x="59" y="40" width="257.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tkE-7B-frB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="35"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0CX-2b-Kdt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hPC-Pi-kZS" firstAttribute="leading" secondItem="0CX-2b-Kdt" secondAttribute="leading" constant="16" id="7Ze-Dd-2bb"/>
+                            <constraint firstItem="TOy-U4-6fz" firstAttribute="centerY" secondItem="0dr-1x-WOi" secondAttribute="centerY" id="AkO-C2-fJY"/>
+                            <constraint firstItem="hPC-Pi-kZS" firstAttribute="top" secondItem="BkP-ya-nmq" secondAttribute="bottom" constant="10" id="Ugm-ow-eoo"/>
+                            <constraint firstItem="0CX-2b-Kdt" firstAttribute="trailing" secondItem="hPC-Pi-kZS" secondAttribute="trailing" constant="16" id="YvD-gb-9bA"/>
+                            <constraint firstItem="BkP-ya-nmq" firstAttribute="centerX" secondItem="0dr-1x-WOi" secondAttribute="centerX" id="Z1p-tT-2WY"/>
+                            <constraint firstItem="TOy-U4-6fz" firstAttribute="centerX" secondItem="0dr-1x-WOi" secondAttribute="centerX" id="Zdt-hf-7NV"/>
+                            <constraint firstItem="0CX-2b-Kdt" firstAttribute="bottom" secondItem="hPC-Pi-kZS" secondAttribute="bottom" constant="50" id="gPI-Mh-n99"/>
+                            <constraint firstItem="BkP-ya-nmq" firstAttribute="top" secondItem="0CX-2b-Kdt" secondAttribute="top" constant="40" id="pLH-xV-ARx"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="ticket-icon" id="fUr-mh-Vbu">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="TOy-U4-6fz" id="0pG-C3-Shx"/>
+                        <outlet property="moviesSilde" destination="hPC-Pi-kZS" id="9ig-jb-flS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEd-rY-yeT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,9 +79,9 @@
         <!--Login-->
         <scene sceneID="pFI-TZ-oMh">
             <objects>
-                <viewController id="Sxt-59-hwr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="Sxt-59-hwr" customClass="LoginViewController" customModule="RetoCP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1XE-8X-gNK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Bj5-1h-0rR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -62,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="1286" y="-250"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="pjb-1H-a0Q">
             <objects>
-                <tabBarController id="mDl-4R-TzS" sceneMemberID="viewController">
+                <tabBarController id="mDl-4R-TzS" customClass="TabBarViewController" customModule="RetoCP" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZtC-E7-TZY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -86,6 +118,9 @@
         <image name="store-icon" width="20" height="20"/>
         <image name="ticket-icon" width="20" height="14"/>
         <image name="user-icon" width="20" height="20"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

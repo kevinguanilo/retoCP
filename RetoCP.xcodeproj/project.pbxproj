@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,14 @@
 		2428D7152670597D007325FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2428D7142670597D007325FB /* Assets.xcassets */; };
 		2428D7182670597D007325FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2428D7162670597D007325FB /* LaunchScreen.storyboard */; };
 		243B8282267115C600E0BB09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B8281267115C600E0BB09 /* HomeViewController.swift */; };
+		243B82A12671579D00E0BB09 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82A02671579D00E0BB09 /* Constants.swift */; };
+		243B82A4267157A600E0BB09 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82A3267157A600E0BB09 /* Services.swift */; };
+		243B82DD26716C4200E0BB09 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82DC26716C4200E0BB09 /* Movies.swift */; };
+		243B82E52671909E00E0BB09 /* ImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82E42671909E00E0BB09 /* ImageFromURL.swift */; };
+		243B82F12671C49400E0BB09 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82F02671C49400E0BB09 /* LoginViewController.swift */; };
+		243B82F82671C75700E0BB09 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82F72671C75700E0BB09 /* TabBarViewController.swift */; };
+		243B82FB2671C78800E0BB09 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82FA2671C78800E0BB09 /* UIApplication+Extensions.swift */; };
+		307CD12CB1B5AC5450BF9F4B /* Pods_RetoCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5299300E925A9470E2CAB558 /* Pods_RetoCP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,16 @@
 		2428D7172670597D007325FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2428D7192670597D007325FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		243B8281267115C600E0BB09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		243B82A02671579D00E0BB09 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		243B82A3267157A600E0BB09 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		243B82DC26716C4200E0BB09 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		243B82E42671909E00E0BB09 /* ImageFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromURL.swift; sourceTree = "<group>"; };
+		243B82F02671C49400E0BB09 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		243B82F72671C75700E0BB09 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		243B82FA2671C78800E0BB09 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		5299300E925A9470E2CAB558 /* Pods_RetoCP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetoCP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		544704B40D98CEB7AECF60BD /* Pods-RetoCP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetoCP.release.xcconfig"; path = "Target Support Files/Pods-RetoCP/Pods-RetoCP.release.xcconfig"; sourceTree = "<group>"; };
+		6E1148800073B6C7357447DE /* Pods-RetoCP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetoCP.debug.xcconfig"; path = "Target Support Files/Pods-RetoCP/Pods-RetoCP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307CD12CB1B5AC5450BF9F4B /* Pods_RetoCP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08CA2082F1F99F4DE351C376 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5299300E925A9470E2CAB558 /* Pods_RetoCP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2428D6FF2670597D007325FB = {
 			isa = PBXGroup;
 			children = (
 				2428D70A2670597D007325FB /* RetoCP */,
 				2428D7092670597D007325FB /* Products */,
+				F37121D1867DF0FBC4AB03B9 /* Pods */,
+				08CA2082F1F99F4DE351C376 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +85,10 @@
 		2428D70A2670597D007325FB /* RetoCP */ = {
 			isa = PBXGroup;
 			children = (
-				243B82802671159A00E0BB09 /* ViewControllers */,
+				243B82E32671908500E0BB09 /* Helpers */,
+				243B82DB26716C2400E0BB09 /* Model */,
+				243B829F2671578E00E0BB09 /* Networking */,
+				243B82802671159A00E0BB09 /* Controller */,
 				2428D70B2670597D007325FB /* AppDelegate.swift */,
 				2428D70D2670597D007325FB /* SceneDelegate.swift */,
 				2428D7112670597D007325FB /* Main.storyboard */,
@@ -67,12 +99,49 @@
 			path = RetoCP;
 			sourceTree = "<group>";
 		};
-		243B82802671159A00E0BB09 /* ViewControllers */ = {
+		243B82802671159A00E0BB09 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				243B8281267115C600E0BB09 /* HomeViewController.swift */,
+				243B82F02671C49400E0BB09 /* LoginViewController.swift */,
+				243B82F72671C75700E0BB09 /* TabBarViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		243B829F2671578E00E0BB09 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				243B82A02671579D00E0BB09 /* Constants.swift */,
+				243B82A3267157A600E0BB09 /* Services.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		243B82DB26716C2400E0BB09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				243B82DC26716C4200E0BB09 /* Movies.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		243B82E32671908500E0BB09 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				243B82E42671909E00E0BB09 /* ImageFromURL.swift */,
+				243B82FA2671C78800E0BB09 /* UIApplication+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F37121D1867DF0FBC4AB03B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E1148800073B6C7357447DE /* Pods-RetoCP.debug.xcconfig */,
+				544704B40D98CEB7AECF60BD /* Pods-RetoCP.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2428D71C2670597D007325FB /* Build configuration list for PBXNativeTarget "RetoCP" */;
 			buildPhases = (
+				ED2010E529639465A0A93CA9 /* [CP] Check Pods Manifest.lock */,
 				2428D7042670597D007325FB /* Sources */,
 				2428D7052670597D007325FB /* Frameworks */,
 				2428D7062670597D007325FB /* Resources */,
+				D6BCAB191B313243A11A6814 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,14 +211,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D6BCAB191B313243A11A6814 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED2010E529639465A0A93CA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RetoCP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2428D7042670597D007325FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243B82FB2671C78800E0BB09 /* UIApplication+Extensions.swift in Sources */,
+				243B82E52671909E00E0BB09 /* ImageFromURL.swift in Sources */,
+				243B82A4267157A600E0BB09 /* Services.swift in Sources */,
 				2428D70C2670597D007325FB /* AppDelegate.swift in Sources */,
+				243B82DD26716C4200E0BB09 /* Movies.swift in Sources */,
+				243B82F82671C75700E0BB09 /* TabBarViewController.swift in Sources */,
+				243B82F12671C49400E0BB09 /* LoginViewController.swift in Sources */,
 				2428D70E2670597D007325FB /* SceneDelegate.swift in Sources */,
 				243B8282267115C600E0BB09 /* HomeViewController.swift in Sources */,
+				243B82A12671579D00E0BB09 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +411,7 @@
 		};
 		2428D71D2670597D007325FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1148800073B6C7357447DE /* Pods-RetoCP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +431,7 @@
 		};
 		2428D71E2670597D007325FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 544704B40D98CEB7AECF60BD /* Pods-RetoCP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
