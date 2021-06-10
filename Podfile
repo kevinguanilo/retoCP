@@ -7,5 +7,6 @@ target 'RetoCP' do
 
   # Pods for RetoCP
   pod 'ImageSlideshow', '~> 1.9.0'
+  pod 'Google/SignIn'
 
 end

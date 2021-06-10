@@ -12,6 +12,8 @@
 		2428D7132670597D007325FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2428D7112670597D007325FB /* Main.storyboard */; };
 		2428D7152670597D007325FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2428D7142670597D007325FB /* Assets.xcassets */; };
 		2428D7182670597D007325FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2428D7162670597D007325FB /* LaunchScreen.storyboard */; };
+		243410AF2672868C00915539 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243410AE2672868C00915539 /* GoogleService-Info.plist */; };
+		243411002672B23700915539 /* CandyStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243410FF2672B23700915539 /* CandyStoreViewController.swift */; };
 		243B8282267115C600E0BB09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B8281267115C600E0BB09 /* HomeViewController.swift */; };
 		243B82A12671579D00E0BB09 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82A02671579D00E0BB09 /* Constants.swift */; };
 		243B82A4267157A600E0BB09 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B82A3267157A600E0BB09 /* Services.swift */; };
@@ -31,6 +33,8 @@
 		2428D7142670597D007325FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2428D7172670597D007325FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2428D7192670597D007325FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243410AE2672868C00915539 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		243410FF2672B23700915539 /* CandyStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyStoreViewController.swift; sourceTree = "<group>"; };
 		243B8281267115C600E0BB09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		243B82A02671579D00E0BB09 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		243B82A3267157A600E0BB09 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				2428D7142670597D007325FB /* Assets.xcassets */,
 				2428D7162670597D007325FB /* LaunchScreen.storyboard */,
 				2428D7192670597D007325FB /* Info.plist */,
+				243410AE2672868C00915539 /* GoogleService-Info.plist */,
 			);
 			path = RetoCP;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				243B8281267115C600E0BB09 /* HomeViewController.swift */,
 				243B82F02671C49400E0BB09 /* LoginViewController.swift */,
 				243B82F72671C75700E0BB09 /* TabBarViewController.swift */,
+				243410FF2672B23700915539 /* CandyStoreViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 				2428D7052670597D007325FB /* Frameworks */,
 				2428D7062670597D007325FB /* Resources */,
 				D6BCAB191B313243A11A6814 /* [CP] Embed Pods Frameworks */,
+				87E5EA8884CAC94EB3FA60B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2428D7182670597D007325FB /* LaunchScreen.storyboard in Resources */,
+				243410AF2672868C00915539 /* GoogleService-Info.plist in Resources */,
 				2428D7152670597D007325FB /* Assets.xcassets in Resources */,
 				2428D7132670597D007325FB /* Main.storyboard in Resources */,
 			);
@@ -212,6 +220,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		87E5EA8884CAC94EB3FA60B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RetoCP/Pods-RetoCP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D6BCAB191B313243A11A6814 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243411002672B23700915539 /* CandyStoreViewController.swift in Sources */,
 				243B82FB2671C78800E0BB09 /* UIApplication+Extensions.swift in Sources */,
 				243B82E52671909E00E0BB09 /* ImageFromURL.swift in Sources */,
 				243B82A4267157A600E0BB09 /* Services.swift in Sources */,
